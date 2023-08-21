@@ -45,15 +45,15 @@ To use the Phonebook Application, follow these steps:
 
 **Usage**
 
-1.Add Contact: Choose this option to add a new contact. Enter the contact's name, phone number, and address when prompted.
+**1.Add Contact:** Choose this option to add a new contact. Enter the contact's name, phone number, and address when prompted.
 
-2.Display Contacts: View the list of all contacts in the phonebook. If the phonebook is empty, a message will be displayed.
+**2.Display Contacts:** View the list of all contacts in the phonebook. If the phonebook is empty, a message will be displayed.
 
-3.Search Contact by Phone: Enter a phone number to search for a contact. If found, the contact's information will be displayed.
+**3.Search Contact by Phone:** Enter a phone number to search for a contact. If found, the contact's information will be displayed.
 
-4.Delete Contact: Enter the index of the contact you want to delete. The contact will be removed from the phonebook.
+**4.Delete Contact:** Enter the index of the contact you want to delete. The contact will be removed from the phonebook.
 
-5.Exit: Choose this option to exit the application.
+**5.Exit:** Choose this option to exit the application.
 
 **File Format**
 
