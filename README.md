@@ -12,10 +12,15 @@ this project's menu include adding new records, listing them, editing and updati
 **Table of Contents**
 
 1.Features
+
 2.Getting Started
+
 3.Usage
+
 4.File Format
+
 5.Limitations
+
 6.Contributing
 
 **Features**
