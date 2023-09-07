@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -47,12 +46,13 @@ void displayContacts(struct Contact phonebook[], int numContacts) {
     }
 
     printf("Phonebook Contacts:\n");
+    printf("%-20s %-15s %-40s\n", "Name", "Phone", "Address");
+    printf("------------------------------------------------------\n");
+
     int i;
     for (i = 0; i < numContacts; i++) {
-        printf("Contact %d:\n", i + 1);
-        printf("Name: %s\nPhone: %s\nAddress: %s\n",
+        printf("%-20s %-15s %-40s\n",
                phonebook[i].name, phonebook[i].phone, phonebook[i].address);
-        printf("--------------------------------\n");
     }
 }
 
@@ -91,8 +91,12 @@ void addContact(struct Contact phonebook[], int *numContacts) {
     struct Contact newContact;
     printf("Enter name: ");
     scanf("%s", newContact.name);
-    printf("Enter phone number: ");
+    printf("Enter phone number (up to 10 digits): ");
     scanf("%s", newContact.phone);
+    if (strlen(newContact.phone) != 10) {
+        printf("Phone number must be exactly 10 digits.\n");
+        return;
+    }
     printf("Enter address: ");
     scanf(" %[^\n]", newContact.address);
 
